@@ -24,13 +24,13 @@ namespace _01___High_Low_Number_Guessing
             int solution = new Random().Next(MAX - MIN) + MIN;
 
             Console.WriteLine($"Guess the value between ${MIN} and ${MAX}");
-            Console.WriteLine($"You have {NUMBER_OF_ATTEMPTS} attemts to guess the number");
-            Console.WriteLine($"The soltuion is {solution}. Don't tell anyone, OK?");
+            Console.WriteLine($"You have {NUMBER_OF_ATTEMPTS} attempts to guess the number");
+            Console.WriteLine($"The solution is {solution}. Don't tell anyone, OK?");
 
             for (int i = 1; i <= NUMBER_OF_ATTEMPTS; ++i)
             {
                 Console.WriteLine();
-                Console.Write($"Attemt {i} - Enter your number: ");
+                Console.Write($"Attempt {i} - Enter your number: ");
                 int guess = Convert.ToInt32(Console.ReadLine());
 
                 if (guess < solution)
